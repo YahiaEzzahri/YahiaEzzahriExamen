@@ -1,0 +1,4 @@
+Statistiques des logs :
+INFO : 2
+WARNING : 1
+ERROR : 1
