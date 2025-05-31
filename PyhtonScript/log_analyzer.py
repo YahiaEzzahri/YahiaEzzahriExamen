@@ -1,3 +1,6 @@
+from colorama import Fore, Style, init
+init()
+
 def analyser_log(fichier_log, fichier_rapport):
     nb_info = nb_warning = nb_error = 0
 
@@ -16,7 +19,4 @@ def analyser_log(fichier_log, fichier_rapport):
         f.write(f"WARNING : {nb_warning}\n")
         f.write(f"ERROR : {nb_error}\n")
 
-    print("Rapport généré avec succès.")
-
-if __name__ == "__main__":
-    analyser_log("bt.log", "rapport_bt.txt")
+    print(Fore.GREEN + "Rapport généré avec succès." + Style.RESET_ALL)
